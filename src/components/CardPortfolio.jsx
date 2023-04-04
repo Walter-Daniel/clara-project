@@ -22,8 +22,8 @@ export const CardPortfolio = () => {
   };
 
   return (
-    <div>
-        <Typography variant='h2' textAlign='center'>Portfolio</Typography>
+    <div className='bg-color' id='projects'>
+       
 
         <Grid container spacing={2}>
 
@@ -31,8 +31,13 @@ export const CardPortfolio = () => {
             {
             projectInfo.map(( project ) => {
                 return(
-                    <Grid item xs={12} sm={12} md={6} lg={4}>
-                        <Card sx={{ maxWidth: 500 }}>
+                    <Grid item xs={12} sm={12} md={6} lg={4} key={project.img}>
+                        <Card sx={{ maxWidth: 500,
+                                    backgroundColor: '#000000',
+                                    color: '#ffffff',
+                                    border: 1,
+                                    borderColor:'#ffffff'
+                                    }}  >
                         <CardHeader
                             title={project.title}
                             subheader="September 14, 2016"
@@ -42,30 +47,22 @@ export const CardPortfolio = () => {
                             height="194"
                             image={project.img}
                             alt="Paella dish"
+                            sx={{ padding: '0 1rem '}}
                         />
                         <CardContent>
-                            <Typography variant="body2" color="text.secondary">
+                            <Typography variant="body2" color='white'>
                             Tecnologias: {project.tecnology}
                             </Typography>
                         </CardContent>
-                        <CardActions disableSpacing>
-                            
-                        <p>Links importantes</p>
-                            <ExpandMore
-                            expand={expanded}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
-                            aria-label="show more"
-                            >
-                            <ExpandMoreIcon />
-                            </ExpandMore>
-                            
+
+                        <CardActions sx={{
+                            justifyContent: 'flex-end'
+                        }}>
+                            <Button size="small" href={project.path} sx={{ paddingRight: '1.9rem' }} color='secondary' target='_blank'>Ir al Sitio Web</Button>
                         </CardActions>
-                        <Collapse in={expanded} timeout="auto" unmountOnExit>
-                            <CardContent>
-                                <Typography paragraph>Sitio Web:</Typography>
-                                <Button variant="contained" href='www.google.com' target='_blank' >Deploy</Button>
-                                <Typography paragraph>Repositorios:</Typography>
+                        
+                        <CardContent>
+                                                               
                                 {
                                     ( project.githubBack === null ) ? 
                                     <Stack
@@ -73,7 +70,9 @@ export const CardPortfolio = () => {
                                         divider={<Divider orientation="vertical" flexItem />}
                                         spacing={2}
                                         >
-                                        <Button variant="contained" href={project.github} target='_blank' >Frontend</Button> 
+                                        <Typography paragraph paddingTop={2}>Repositorio:</Typography>
+                                        
+                                        <Button  href={project.github} target='_blank' size="small" color='secondary' variant='outlined'>Frontend</Button> 
                                     </Stack>
                                     :
                                     <Stack
@@ -81,12 +80,14 @@ export const CardPortfolio = () => {
                                         divider={<Divider orientation="vertical" flexItem />}
                                         spacing={2}
                                         >
-                                        <Button variant="contained" href={ project.github } target='_blank' >Frontend</Button>
-                                        <Button variant="contained" href={ project.githubBack } target='_blank' >Backend</Button>   
+                                        <Typography paragraph paddingTop={2}>Repositorios:</Typography>
+
+                                        <Button  href={ project.github } target='_blank' size="small" color='secondary' variant='outlined' >Frontend</Button>
+                                        <Button  href={ project.githubBack } target='_blank' size="small" color='secondary' variant='outlined'>Backend</Button>   
                                     </Stack>
                                 }
-                            </CardContent>
-                        </Collapse>
+                        </CardContent>
+                           
                         </Card>
                     </Grid>
                 )

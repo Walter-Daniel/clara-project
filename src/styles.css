@@ -5,3 +5,7 @@ figure {
     display: flex;
     justify-content: flex-end;
 }
+*{
+    
+    color: #ffffff;
+}

@@ -1,14 +1,14 @@
-import React from 'react'
-import { AppBar, Box, Button, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
+import { useState } from 'react';
+import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import PropTypes from 'prop-types';
+import { navItems } from '../helpers/navItems';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
 
 export const DrawerComponent = (props) => {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -18,14 +18,14 @@ export const DrawerComponent = (props) => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Walter Daniel Carrizo
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.url} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} href={item.url} >
+              <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -55,11 +55,13 @@ export const DrawerComponent = (props) => {
                     Walter Daniel Carrizo
                 </Typography>
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    {navItems.map((item) => (
-                      <Button key={item} sx={{ color: '#fff' }}>
-                          {item}
-                      </Button>
-                    ))}
+                    {
+                        navItems.map((item) => (
+                          <Button key={item.url} sx={{ color: '#fff' }} component="a" href={item.url}>
+                              {item.title}
+                          </Button>
+                        ))
+                    }
                 </Box>
                 </Toolbar>
             </AppBar>

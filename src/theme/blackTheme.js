@@ -10,6 +10,9 @@ export const blackTheme = createTheme({
         },
         otherColor: {
             main: '#272727'
+        },
+        backgroundColor: {
+            main: '#272727'
         } 
     } 
 });
