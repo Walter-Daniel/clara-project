@@ -13,8 +13,7 @@ export const Navbar = () => {
 
   return (
   <>
-        <Box sx={{ position: 'sticky', left: 0, top: 0, zIndex: '999' }}>
-           
+        <Box sx={{ position: 'sticky', left: 0, top: 0, zIndex: '999' }}>     
             <nav className='navbar'>
               <div className='title'>
                 <h2>Carrizo Walter Daniel</h2>
@@ -29,12 +28,9 @@ export const Navbar = () => {
                       ))
                    }
               </div>
-  
-                  
-            
-            <div className='burguer'>
-              <Hamburguer openNav={openNav} handleClick={handleClick} />
-            </div>
+              <div className='burguer'>
+                <Hamburguer openNav={openNav} handleClick={handleClick} />
+              </div>
             </nav>
         </Box>
   </>
