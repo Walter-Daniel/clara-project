@@ -10,8 +10,8 @@ function App() {
 
     <AppTheme>
       <Box sx={{ backgroundColor: '#000000', color: '#ffffff' }}>
-        <Container>
           <Navbar />
+        <Container>
           
           <Hero />
           <About />
