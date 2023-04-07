@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, IconButton, Tab, Tabs, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { navItems } from '../helpers/navItems';
 import { styled } from "@mui/material/styles";
@@ -12,20 +12,28 @@ export const Navbar = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  const [value, setValue] = useState('#about');
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   const SelectStyle = styled(Button)(({ theme }) => ({
 
-    "&:hover": {
-      backgroundColor: "#efd703",
-      color: '#000000'
-    },
-    "&.Mui-focused": {
-      backgroundColor: "#efd703",
-      color: '#000000'
-    },
-    "& .MuiButton-select": {
-      backgroundColor: "#efd703",
-      color: '#efd703'
-    }
+    // color: "white",
+
+    // "&:hover": {
+    //   backgroundColor: "#efd703",
+    //   color: '#000000'
+    // },
+    // "&.Mui-focused": {
+    //   backgroundColor: "#efd703",
+    //   color: '#000000'
+    // },
+    // "& .MuiButton-select": {
+    //   backgroundColor: "#efd703",
+    //   color: '#efd703'
+    // }
   }));
 
   return (
@@ -53,9 +61,18 @@ export const Navbar = () => {
                     {
                         navItems.map((item) => (
                           <SelectStyle key={item.url}>
-                            <Button key={item.url} sx={{ color: '#ffffff' }} href={item.url} >
+                            {/* <Button key={item.url} sx={{ color: '#ffffff' }} href={item.url} >
                               {item.title}
-                          </Button>
+                            </Button> */}
+                            <Tabs 
+                                value={value} 
+                                onChange={handleChange} 
+                                textColor="secondary" 
+                                indicatorColor="secondary"
+                                sx={{ color: '#ffffff' }}
+                                >
+                              <Tab label={item.title} component="a" href={item.url} value={item.url} sx={{ color: "#ffffff" }}/>
+                            </Tabs>
                           </SelectStyle>
                         ))
                     }

@@ -73,7 +73,7 @@ export const Education = () => {
                 </TimelineSeparator>
                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h6" component="span">
-                    FullStack Web Developer
+                    FullStack Web Developer (MERN)
                 </Typography>
                 <Typography>RollingCode School</Typography>
                 </TimelineContent>
