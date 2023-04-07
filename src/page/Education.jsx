@@ -1,10 +1,6 @@
-
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab"
 import { Chip, Typography } from "@mui/material"
-
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
 import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
 
 
