@@ -1,7 +1,7 @@
 import { Box, Container } from '@mui/material';
 import { About, Contact, Hero, Portfolio, Skills } from './page';
 import { AppTheme } from './theme/AppTheme';
-import { Navbar } from './components/Navbar';
+import { NavbarComponent } from './components/Navbar';
 import { Education } from './page/Education';
 
 
@@ -10,7 +10,7 @@ function App() {
 
     <AppTheme>
       <Box sx={{ backgroundColor: '#000000', color: '#ffffff' }}>
-          <Navbar />
+          <NavbarComponent />
         <Container>
           
           <Hero />
