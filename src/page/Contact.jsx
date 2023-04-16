@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Button, Grid, Link, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const Contact = () => {
@@ -7,8 +7,16 @@ export const Contact = () => {
      <Typography variant='h2' textAlign='center' padding={5} color="secondary">CONTACTO</Typography>
       <Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} >
-        <Typography variant='href' textAlign='center' padding={5} >Github</Typography>
-        <GitHubIcon />
+        <Button size="small" href="https://github.com/Walter-Daniel" sx={{ paddingRight: '1.9rem' }} color='secondary' target='_blank' variant="contained">
+          <GitHubIcon />
+          <Typography padding={1} >Github</Typography>
+        
+        </Button>
+        <Button size="small" href="https://www.linkedin.com/in/walter-daniel-carrizo/" sx={{ paddingRight: '1.9rem' }} color='secondary' target='_blank' variant="contained">
+          <GitHubIcon />
+          <Typography padding={1} >Linkedin</Typography>
+        
+        </Button>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4} >
         </Grid>
