@@ -7,7 +7,7 @@ export const Portfolio = () => {
   return (
     <>
       <Box id="projects">
-        <Typography variant='h2' textAlign='center' padding={5}>Proyectos</Typography>
+        <Typography variant='h2' textAlign='center' padding={5} color="secondary">PROYECTOS</Typography>
         <CardPortfolio />
       </Box>
     </>

@@ -50,8 +50,14 @@ export const NavbarComponent = () => {
                 <Nav.Link  href="#education">
                   Educación
                 </Nav.Link>
+                <Nav.Link href="#skills">
+                  Habilidades
+                </Nav.Link>
                 <Nav.Link href="#projects">
                   Proyectos
+                </Nav.Link>
+                <Nav.Link href="#contact">
+                  Contacto
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
