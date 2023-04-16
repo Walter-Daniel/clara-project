@@ -43,7 +43,7 @@ export const NavbarComponent = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               
-              <Nav className='me-auto'>
+              <Nav className='ms-auto'>
                 <Nav.Link eventKey={2} href="#about">
                   Acerca de
                 </Nav.Link>

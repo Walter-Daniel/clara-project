@@ -6,7 +6,7 @@ import { Box, Typography } from '@mui/material'
 export const Portfolio = () => {
   return (
     <>
-      <Box>
+      <Box id="projects">
         <Typography variant='h2' textAlign='center' padding={5}>Proyectos</Typography>
         <CardPortfolio />
       </Box>

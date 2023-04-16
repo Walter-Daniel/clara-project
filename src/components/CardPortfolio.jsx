@@ -22,12 +22,8 @@ export const CardPortfolio = () => {
   };
 
   return (
-    <div className='bg-color' id='projects'>
-       
-
+    <div className='bg-color'>
         <Grid container spacing={2}>
-
-
             {
             projectInfo.map(( project ) => {
                 return(
