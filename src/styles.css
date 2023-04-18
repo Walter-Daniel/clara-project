@@ -13,3 +13,15 @@ figure {
 li {
     list-style: none;
 }
+.container-mayor{
+    position: relative;
+}
+.bg-contact {
+ background-image: url(../src/assets/img/fondo-periodico-viejo-vista-anterior_23-2149318884.avif);
+ position: absolute;
+ bottom: 0;
+ left: 0;
+right: 0;
+ height: 10%;
+ width: 100% ; 
+}

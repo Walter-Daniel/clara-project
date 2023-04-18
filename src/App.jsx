@@ -11,7 +11,7 @@ function App() {
     <AppTheme>
       <Box sx={{ backgroundColor: '#000000', color: '#ffffff' }}>
           <NavbarComponent />
-        <Container>
+        <Container className='container-mayor'>
           
           <Hero />
           <About />
