@@ -1,13 +1,15 @@
 import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from "@mui/lab"
-import { Chip, Typography } from "@mui/material"
+import { Box, Chip, Typography } from "@mui/material"
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
 
 
 export const Education = () => {
   return (
-    <div id="education"> 
-     <Typography variant='h2' textAlign='center' padding={5} color="secondary">EDUCACIÓN</Typography>
+    <Box id="education" sx={{ border:'1px solid black', mt:1 }}> 
+        <Box sx={{ borderBottom: '1px solid black' }}>     
+            <Typography variant='h2' textAlign='center' padding={5} color="secondary">EDUCACIÓN</Typography>
+        </Box>
         <Timeline position="alternate">
             <TimelineItem>
                 <TimelineOppositeContent
@@ -79,6 +81,6 @@ export const Education = () => {
                 </TimelineContent>
             </TimelineItem>
         </Timeline>  
-    </div>
+    </Box>
   )
 }

@@ -5,23 +5,20 @@ figure {
     display: flex;
     justify-content: flex-end;
 }
-*{
-    
-    color: #ffffff;
-}
 
 li {
     list-style: none;
 }
-.container-mayor{
-    position: relative;
+hr {
+    height: 1px;
+    background-color: #000;
+    opacity: 1;
+    border: none;
 }
-.bg-contact {
- background-image: url(../src/assets/img/fondo-periodico-viejo-vista-anterior_23-2149318884.avif);
- position: absolute;
- bottom: 0;
- left: 0;
-right: 0;
- height: 10%;
- width: 100% ; 
+.tack-skills {
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: rotate(-45deg);
 }

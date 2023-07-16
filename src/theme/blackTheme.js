@@ -3,16 +3,16 @@ import { createTheme } from "@mui/material";
 export const blackTheme = createTheme({
     palette: {
         primary: {
-            main: '#0f0f0f'
+            main: '#390099'
         },
         secondary: {
-            main: '#efd703'
+            main: '#390099'
         },
         otherColor: {
-            main: '#272727'
+            main: '#000000'
         },
         backgroundColor: {
-            main: '#272727'
+            main: '#f8f8f8'
         } 
     } 
 });

@@ -9,7 +9,7 @@ function App() {
   return (
 
     <AppTheme>
-      <Box sx={{ backgroundColor: '#000000', color: '#ffffff' }}>
+      <Box sx={{ backgroundColor: '#f8f8f8', color: '#000' }}>
           <NavbarComponent />
         <Container className='container-mayor'>
           
@@ -18,8 +18,8 @@ function App() {
           <Education />
           <Skills />
           <Portfolio />
-          <Contact />
         </Container>
+          <Contact />
       </Box>
     </AppTheme>
     

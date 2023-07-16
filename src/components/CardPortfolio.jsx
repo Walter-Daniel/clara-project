@@ -23,21 +23,22 @@ export const CardPortfolio = () => {
 
   return (
     <div className='bg-color'>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} sx={{ border:'1px solid black', padding:'1rem' }}>
             {
             projectInfo.map(( project ) => {
                 return(
                     <Grid item xs={12} sm={12} md={6} lg={4} key={project.img}>
                         <Card sx={{ maxWidth: 500,
-                                    backgroundColor: '#000000',
-                                    color: '#ffffff',
+                                    backgroundColor: '#f8f8f8',
+                                    color: '#000000',
                                     border: 1,
-                                    borderColor:'#ffffff'
+                                    borderColor:'#000000'
                                     }}  >
                         <CardHeader
                             title={project.title}
                             subheader="September 14, 2016"
                         />
+                        <hr />
                         <CardMedia
                             component="img"
                             height="194"
@@ -45,6 +46,7 @@ export const CardPortfolio = () => {
                             alt="Paella dish"
                             sx={{ padding: '0 1rem '}}
                         />
+                        <hr />
                         <CardContent>
                             <Typography variant="body2" color='white'>
                             Tecnologias: {project.tecnology}
@@ -68,7 +70,7 @@ export const CardPortfolio = () => {
                                         >
                                         <Typography paragraph paddingTop={2}>Repositorio:</Typography>
                                         
-                                        <Button  href={project.github} target='_blank' size="small" color='secondary' variant='outlined'>Frontend</Button> 
+                                        <Button  href={project.github} target='_blank' size="small" color='secondary' variant='contained'>Frontend</Button> 
                                     </Stack>
                                     :
                                     <Stack
@@ -76,10 +78,11 @@ export const CardPortfolio = () => {
                                         divider={<Divider orientation="vertical" flexItem />}
                                         spacing={2}
                                         >
+                                          <hr />
                                         <Typography paragraph paddingTop={2}>Repositorios:</Typography>
 
-                                        <Button  href={ project.github } target='_blank' size="small" color='secondary' variant='outlined' >Frontend</Button>
-                                        <Button  href={ project.githubBack } target='_blank' size="small" color='secondary' variant='outlined'>Backend</Button>   
+                                        <Button  href={ project.github } target='_blank' size="small" color='secondary' variant='contained' >Frontend</Button>
+                                        <Button  href={ project.githubBack } target='_blank' size="small" color='secondary' variant='contained'>Backend</Button>   
                                     </Stack>
                                 }
                         </CardContent>
