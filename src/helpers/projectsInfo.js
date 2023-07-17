@@ -1,6 +1,6 @@
 export const projectInfo = [
     {
-        title: 'Journal (App de escritorio)',
+        title: 'Journal App',
         img: 'https://res.cloudinary.com/journal-project/image/upload/v1680555615/zv6xgz3m6by7szisiriy.jpg',
         tecnology: 'HTML, CSS, React-Redux-Toolkit, MIU, NodeJs, Express, MongoDB, Cloudinary',
         path: 'https://purple-journal-app.netlify.app/',

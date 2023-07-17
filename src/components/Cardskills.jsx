@@ -1,9 +1,6 @@
 import { Box, Card, CardContent, CardHeader, Grid } from "@mui/material";
 import { skillsData } from "../helpers/skills";
 import pinkTack from "../assets/img/tack/pink.png";
-import blueTack from "../assets/img/tack/violet.png";
-import paper from "../assets/img/tack/papel.jpg";
-import arrowIcon from "../assets/img/icon/arrow-right.png";
 
 export const CardSkills = () => {
   return (
@@ -12,7 +9,6 @@ export const CardSkills = () => {
         <Grid item xs={12} sm={12} md={6} lg={4} key="skjdks">
           <Box position="relative">
             <img src={pinkTack} alt="pink tack" className="tack-left-skill" />
-            {/* <img src={blueTack} alt="blue tack" className="tack-right-skill" /> */}
             <Card
               className="paper"
               sx={{

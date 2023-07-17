@@ -38,57 +38,12 @@ hr {
   position: absolute;
   top: -2rem;
   left: 31%;
-  /* top: 0; */
-  /* left: -1rem; */
-  /* transform: rotate(-45deg); */
-}
-.tack-right-skill {
-  height: 3rem;
-  position: absolute;
-  bottom: -1.5rem;
-  left: 31%;
-  /* bottom: 0;
-    right: -1rem; */
-  /* transform: rotate(-45deg); */
 }
 
-/* .card-container {
-    background-image: url('../src/assets/img/tack/papel-madera.jpg');
-    object-fit: cover;
-} */
-/* s */
-/* .card-skill {
-  background-image: url("../src/assets/img/tack/paper.avif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.btn-1:hover {
+  background-color: #9337c8;
+  color: #f8f8f8;
 }
-.skill-li {
-  margin-top: 0.7rem;
-}
-.skill-li li {
-  padding-bottom: 0.5rem;
-}
-.skill-li img {
-  height: 1.3rem;
-  border: 1px solid black;
-  border-radius: 50%;
-  padding: 0.2rem;
-  vertical-align: middle;
-  margin-right: 0.4rem;
-} */
-
-/* *********************************************************************************************** */
-/* .paper {
-  position: absolute;
-  height: 550px;
-  width: 450px;
-  background: rgba(255, 255, 255, 0.9);
-  margin: -275px -225px;
-  left: 50%;
-  top: 50%;
-  box-shadow: 0px 0px 5px 0px #888;
-} */
 .paper::before {
   content: "";
   position: absolute;
