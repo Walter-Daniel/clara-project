@@ -23,7 +23,7 @@ export const CardPortfolio = () => {
 
   return (
     <div className='bg-color'>
-        <Grid container spacing={2} sx={{ border:'1px solid black', padding:'1rem' }}>
+        <Grid container spacing={2}>
             {
             projectInfo.map(( project ) => {
                 return(

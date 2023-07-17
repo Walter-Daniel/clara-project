@@ -4,8 +4,8 @@ import React from 'react'
 export const About = () => {
   return (
     <Box id="about" sx={{ border:'1px solid black', padding:'1rem' }}>
-    <Typography variant='h2' textAlign="center">Acerca de mí</Typography>
-    <hr />
+      <Typography variant='h2'padding={2}>Acerca de mí</Typography>
+      <hr />
     <Grid
         container
         spacing={2} 

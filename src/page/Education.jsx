@@ -8,7 +8,7 @@ export const Education = () => {
   return (
     <Box id="education" sx={{ border:'1px solid black', mt:1 }}> 
         <Box sx={{ borderBottom: '1px solid black' }}>     
-            <Typography variant='h2' textAlign='center' padding={5} color="secondary">EDUCACIÓN</Typography>
+            <Typography variant='h2'padding={2}>EDUCACIÓN</Typography>
         </Box>
         <Timeline position="alternate">
             <TimelineItem>

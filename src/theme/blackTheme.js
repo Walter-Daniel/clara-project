@@ -6,7 +6,7 @@ export const blackTheme = createTheme({
             main: '#390099'
         },
         secondary: {
-            main: '#390099'
+            main: '#cdb4db'
         },
         otherColor: {
             main: '#000000'
