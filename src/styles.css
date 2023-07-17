@@ -1,24 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 figure img {
-    height: 60vh;
+  height: 60vh;
 }
 figure {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 hr {
-    height: 1px;
-    background-color: #000;
-    opacity: 1;
-    border: none;
+  height: 1px;
+  background-color: #000;
+  opacity: 1;
+  border: none;
 }
-.tack-skills {
-    height: 3rem;
+.tack-left-skill {
+  height: 3rem;
+  position: absolute;
+  top: -2rem;
+  left: 31%;
+  /* top: 0; */
+  /* left: -1rem; */
+  /* transform: rotate(-45deg); */
+}
+.tack-right-skill {
+  height: 3rem;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 31%;
+  /* bottom: 0;
+    right: -1rem; */
+  /* transform: rotate(-45deg); */
+}
+
+/* .card-container {
+    background-image: url('../src/assets/img/tack/papel-madera.jpg');
+    object-fit: cover;
+} */
+/* s */
+/* .card-skill {
+  background-image: url("../src/assets/img/tack/paper.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.skill-li {
+  margin-top: 0.7rem;
+}
+.skill-li li {
+  padding-bottom: 0.5rem;
+}
+.skill-li img {
+  height: 1.3rem;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 0.2rem;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+} */
+
+/* *********************************************************************************************** */
+/* .paper {
+  position: absolute;
+  height: 550px;
+  width: 450px;
+  background: rgba(255, 255, 255, 0.9);
+  margin: -275px -225px;
+  left: 50%;
+  top: 50%;
+  box-shadow: 0px 0px 5px 0px #888;
+} */
+.paper::before {
+  content: "";
+  position: absolute;
+  left: 70px;
+  height: 100%;
+  width: 2px;
+  background: rgba(255, 0, 0, 0.4);
+}
+.lines {
+  margin-top: 40px;
+  height: calc(100% - 40px);
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    white 0px,
+    white 24px,
+    steelblue 25px
+  );
+}
+.text {
+  position: absolute;
+  top: 65px;
+  left: 55px;
+  bottom: 10px;
+  right: 10px;
+  line-height: 25px;
+  font-family: "Indie Flower";
+  overflow: hidden;
+  outline: none;
+}
+.holes {
     position: absolute;
-    top: 0;
-    left: -1rem;
-    transform: rotate(-45deg);
-}
+    left: 40px;
+    height: 20px;
+    width: 20px;
+    background: #f8f8f8;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 2px 0px #888;
+  }
+  .hole-top {
+    top: 10%;
+  }
+  .hole-middle {
+    top: 50%;
+  }
+  .hole-bottom {
+    bottom: 10%;
+  }

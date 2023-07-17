@@ -14,5 +14,8 @@ export const blackTheme = createTheme({
         backgroundColor: {
             main: '#f8f8f8'
         } 
-    } 
+    },
+    typography: {
+        fontFamily: 'Righteous'
+    }
 });
