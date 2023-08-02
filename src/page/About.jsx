@@ -4,7 +4,7 @@ import pin from '../assets/img/tack/pin.png';
 
 export const About = () => {
   return (
-    <Box id="about" sx={{ border:'1px solid black', padding:'1rem', position: 'relative' }}>
+    <Box id="about" sx={{ border:'1px solid black', padding:'1rem', position: 'relative', mt:2 }}>
       <img src={pin} alt={pin} className='borderImageRight'/>
         <img src={pin} alt={pin} className='borderImageLeft'/>
       <Typography variant='h2'padding={2}>Acerca de mí</Typography>
