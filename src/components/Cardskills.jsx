@@ -6,7 +6,7 @@ export const CardSkills = () => {
   return (
     <>
       {skillsData.map(({ skills, title }) => (
-        <Grid item xs={12} sm={12} md={6} lg={4} key="skjdks">
+        <Grid item xs={12} sm={12} md={6} lg={4} key="skjdks" justifyContent='center' alignItems='center'>
           <Box position="relative">
             <img src={pinkTack} alt="pink tack" className="tack-left-skill" />
             <Card

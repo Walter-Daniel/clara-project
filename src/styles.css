@@ -4,7 +4,7 @@ h2 {
     position: relative;
     z-index: 100;
 }
-h2::before {
+h2::after {
     content: "";
     position: absolute;
     left: 90px;
@@ -81,3 +81,58 @@ hr {
   .hole-bottom {
     bottom: 10%;
   }
+
+.button-sticker p{
+  position: relative;
+}
+.button-sticker img {
+  height: 2.7rem;
+  bottom: 10px;
+  position: absolute;
+}
+.button-sticker:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+#historieta{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  width: 13rem;
+  left: 10px;
+  height: 70px;
+  background-color: #70afcc;
+  border-radius: 25px;
+}
+
+#historieta::after{
+  content: "";
+  position: absolute;
+  top: 55px;
+  left: 95px;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid #70afcc;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  transform: rotate(75deg);
+}
+.cardImage {
+  border: 3px solid grey;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.tack-card {
+  position: absolute;
+  top: -24px;
+  left: 26%;
+}
+.borderImage {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  height: 9rem;
+}
