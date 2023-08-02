@@ -1,18 +1,20 @@
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Button, Grid, Typography } from '@mui/material';
+import pin from '../assets/img/tack/pin.png';
+
 
 export const About = () => {
   return (
-    <Box id="about" sx={{ border:'1px solid black', padding:'1rem' }}>
+    <Box id="about" sx={{ border:'1px solid black', padding:'1rem', position: 'relative' }}>
+      <img src={pin} alt={pin} className='borderImageRight'/>
+        <img src={pin} alt={pin} className='borderImageLeft'/>
       <Typography variant='h2'padding={2}>Acerca de mí</Typography>
-      <hr />
     <Grid
         container
         spacing={2} 
         alignItems="center"
-     
+        marginTop='1rem'
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={5} display='flex' justifyContent='center'>
           <figure>
             <img
                   src="https://res.cloudinary.com/journal-project/image/upload/v1680532880/sh4x6pp7sxqkj03bxyhy.png"
@@ -24,7 +26,7 @@ export const About = () => {
                 />
           </figure>
         </Grid>
-        <Grid item xs={12} md={6} sx={{ border:'1px solid black', padding:'1rem'}}>
+        <Grid item xs={12} md={7} sx={{ border:'1px solid black', padding:'1rem'}} >
           <Typography variant='h3'>Walter Daniel Carrizo</Typography>
           <hr />
           <Typography>

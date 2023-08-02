@@ -2,15 +2,18 @@ import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem
 import { Box, Chip, Typography } from "@mui/material"
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import MenuBookTwoToneIcon from '@mui/icons-material/MenuBookTwoTone';
+import pin from '../assets/img/tack/pin.png';
 
 
 export const Education = () => {
   return (
-    <Box id="education" sx={{ border:'1px solid black', mt:1 }}> 
-        <Box sx={{ borderBottom: '1px solid black' }}>     
+    <Box id="education" sx={{ border:'1px solid black', mt:1, padding:'1rem', position:'relative' }}> 
+        <img src={pin} alt={pin} className='borderImageRight'/>
+        <img src={pin} alt={pin} className='borderImageLeft'/>
+        <Box sx={{ marginBottom:'1rem' }}>     
             <Typography variant='h2'padding={2}>EDUCACIÓN</Typography>
         </Box>
-        <Timeline position="alternate">
+        <Timeline position="alternate" sx={{ border:'1px solid black' }}>
             <TimelineItem>
                 <TimelineOppositeContent
                     sx={{ m: 'auto 0' }}

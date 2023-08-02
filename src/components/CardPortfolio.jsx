@@ -2,37 +2,25 @@ import * as React from "react";
 import {
   Button,
   Stack,
-  IconButton,
   CardActions,
   CardMedia,
   CardContent,
   Card,
   CardHeader,
   Typography,
-  styled,
   Grid,
-  Box,
 } from "@mui/material";
 import { projectInfo } from "../helpers/projectsInfo";
-import pinkTack from "../assets/img/tack/pink.png";
+import pinkTack from "../assets/img/tack/white.png";
 import buttonSticker from "../assets/img/tack/title-sticker.png";
 
 export const CardPortfolio = () => {
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
-
   return (
     <div className="bg-color">
       <Grid container spacing={2}>
         {projectInfo.map((project) => {
           return (
-            <Grid item xs={12} sm={12} md={6} lg={4} key={project.img}>
-              <Box position="relative">
-                {/* <img src={pinkTack} alt="pink tack" className="tack-left-skill" /> */}
-
+            <Grid item xs={12} sm={12} md={6} lg={4} key={project.img}>  
                 <Card
                   className="lines"
                   sx={{
@@ -51,7 +39,7 @@ export const CardPortfolio = () => {
                     component="img"
                     image={pinkTack}
                     className="tack-card"
-                    sx={{ width: "170px" }}
+                    sx={{ width: "150px" }}
                   />
                   <CardHeader
                     title={project.title}
@@ -139,7 +127,6 @@ export const CardPortfolio = () => {
                     )}
                   </CardContent>
                 </Card>
-              </Box>
             </Grid>
           );
         })}

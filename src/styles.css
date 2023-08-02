@@ -127,12 +127,18 @@ hr {
 }
 .tack-card {
   position: absolute;
-  top: -24px;
+  top: -30px;
   left: 26%;
 }
-.borderImage {
+.borderImageRight {
   position: absolute;
-  top: -50px;
+  top: 5px;
   right: 0;
-  height: 9rem;
+  height: 4rem;
+}
+.borderImageLeft {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  height: 4rem;
 }

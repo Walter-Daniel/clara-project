@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, CardHeader, Grid } from "@mui/material";
 import { skillsData } from "../helpers/skills";
-import pinkTack from "../assets/img/tack/pink.png";
+import pinkTack from "../assets/img/tack/lightblue.png";
 
 export const CardSkills = () => {
   return (
